@@ -1,0 +1,8 @@
+name: ci
+
+jobs:
+  build:
+    true
+
+  test:
+    fail
