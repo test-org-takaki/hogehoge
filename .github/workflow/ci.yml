@@ -1,12 +1,12 @@
 name: ci
 
-on: [push, pull_request]
-
+on: [push]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: build
         run: |
           true
@@ -14,7 +14,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: test
         run: |
           fail
-
+          
