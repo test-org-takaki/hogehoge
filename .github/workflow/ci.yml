@@ -4,7 +4,14 @@ on: [push]
 
 jobs:
   build:
-    true
+    steps:
+      - name: build
+        run: |
+          true
 
   test:
-    fail
+    steps:
+      - name: test
+        run: |
+          fail
+
